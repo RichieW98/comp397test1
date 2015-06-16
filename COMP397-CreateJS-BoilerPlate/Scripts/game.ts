@@ -100,7 +100,7 @@ function pinkButtonOut() {
     pinkButton.alpha = 1.0;
 }
 
-
+// generate the number of dice
 function Roll() {
     var betLine = [" ", " "];
     var outCome = [0, 0];
@@ -137,7 +137,7 @@ function Roll() {
     return betLine;
 }
 
-
+//display the rolls on screen
 function display() {
     stage.removeAllChildren();
     var res = Roll();
@@ -179,7 +179,7 @@ function display() {
     pink();
 }
 
-
+// display roll button
 function pink() {
     pinkButton = new createjs.Bitmap(assets.getResult("pinkButton"));
     pinkButton.regX = pinkButton.getBounds().width * 0.5;
